@@ -224,7 +224,7 @@ a:active {
   background-size: 15%;
   background-repeat: no-repeat;
   background-position: center center;
-}
+} 
 
 p {
   font-size: 1rem;
@@ -368,7 +368,7 @@ p {
   height: auto;
   position: relative;
 
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   /* Required to contain overlay size */
 }
 
@@ -401,7 +401,7 @@ p {
 
   display: flex;
   justify-content: space-between;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1.75rem; */
   padding-top: 1rem;
 }
 
@@ -808,7 +808,7 @@ a.sub-navigation-link:hover {
 @media (min-width: 992px) {
 
   body {
-    background: forestgreen;
+    /* background: forestgreen; */
   }
 
   h1 {
@@ -828,7 +828,7 @@ a.sub-navigation-link:hover {
   }
 
   .hero {
-    min-height: 100vh;
+    min-height: 70vh;
   }
 
   .hero-headline-wrapper {
@@ -837,7 +837,7 @@ a.sub-navigation-link:hover {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 2.5rem;
   }
 
 
@@ -961,7 +961,7 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1200px) {
   body {
-    background: hotpink;
+    /* background: hotpink; */
   }
 
   .grid {
@@ -975,7 +975,7 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1400px) {
   body {
-    background: blueviolet;
+    /* background: blueviolet; */
   }
 
   .grid {
