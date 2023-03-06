@@ -409,6 +409,15 @@ p {
   padding-top: 1rem;
 }
 
+/* .work-page-grid-item a img {
+  filter: opacity(1);
+}
+
+.work-page-grid-item > a:hover img {
+  filter: opacity(.4);
+} */
+
+
 
 
 /* 
@@ -920,7 +929,7 @@ a.sub-navigation-link:hover {
   }
 
 .copyright {
-  /* background-color: hotpink; */
+font-size: .9rem;
   text-align: left;
 }
 
