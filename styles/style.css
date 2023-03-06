@@ -465,6 +465,8 @@ p {
   margin-bottom: 20px;
 }
 
+
+
 .global-footer {
   margin-top: 50px;
   display: grid;
@@ -918,6 +920,7 @@ a.sub-navigation-link:hover {
   }
 
 .copyright {
+  /* background-color: hotpink; */
   text-align: left;
 }
 
@@ -992,10 +995,12 @@ a.sub-navigation-link:hover {
 @media (min-width: 1400px) {
   body {
     /* background: blueviolet; */
+    
   }
 
+
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
   }
 
 
