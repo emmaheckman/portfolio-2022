@@ -3,50 +3,84 @@
 
 <head>
   <title>About Page</title>
-  <meta name="description" content="I am a IDEA Student from Capilano University studying branding and interactive design.">
+  <meta name="description"
+    content="I am a IDEA Student from Capilano University studying branding and interactive design.">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <script src="https://kit.fontawesome.com/d300c2ea15.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body class="about-page">
-    <header class="hero-header">
-        <ul class="branding-navigation">
-            <li><a href="index.html" class="custom-navigation">Work</a></li>
-            <li class="logo"><a href="work.html"><img src="assets/logo/emma-heckman-logo-branding-project.png"
-              alt="site logo" /></a></li>
-            <li><a href="about.html" class="custom-navigation">About</a></li>
-          </ul>
-    </header>
+  <header class="hero-header">
+    <ul class="branding-navigation">
+      <li><a href="index.html" class="custom-navigation">Work</a></li>
+      <li class="logo"><a href="work.html"><img src="assets/logo/emma-heckman-logo-branding-project.png"
+            alt="site logo" /></a></li>
+      <li><a href="about.html" class="custom-navigation">About</a></li>
+    </ul>
+  </header>
   <ul class="about">
-    <li class="about-item-1"><div class="about-image"><img src="assets/emma-heckman-about-photo.jpg" width="800" height="800" alt="self portrait"></div>
-   </li>
-    <li class="about-item-2">  <h2>About Me</h2>
+    <li class="about-item-1">
+      <div class="about-image"><img src="assets/emma-heckman-about-photo.jpg" width="800" height="800"
+          alt="self portrait"></div>
+    </li>
+    <li class="about-item-2">
+      <h2>About Me</h2>
       <p>I am a graphic designer with a knack for UX UI. I am never afraid to ask questions, whether it be to better understand a project scope or to get the latest on a colleague’s cat. My questions drive my thorough research and keep my work user centred. I thrive in group projects where I use my listening and problem-solving skills to create positive and focused group dynamics.</p>
-  </li>
+    </li>
 
   </ul>
 
-  <li class="about-item-4">
-    <p><a href="#top">Smooth scroll to the top</a></p>
-  </li> 
-  
-
-
   <ul class="global-footer">
     <li class="footer-item-1">
-
-      <p class="copyright">© 2023 Emma Heckman
-      </p>
+      <ul class="footer-intro-list">
+        <li class="footer-intro-item">
+          <figure class="footer-logo"><a href="work.html"><img src="assets/logo/emma-heckman-logo-branding-project.png"
+                alt="personal logo" /></a></figure>
+        </li>
+        <li class="footer-intro-item"><a href="#">Designed and coded with love by me.</a></li>
+      </ul>
     </li>
-
+    <li class="footer-item-2">
+      <!-- <h2>Navigate my site</h2> -->
+      <ul class="footer-navigation-list">
+        <li class="footer-navigation-item"><a href="#">Work</a></li>
+        <li class="footer-navigation-item"><a href="#">Project 2</a></li>
+        <li class="footer-navigation-item"><a href="#">About</a></li>
+      </ul>
+    </li>
     <li class="footer-item-3">
-
-      <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
+      <!-- <h2>Contact Info</h2> -->
+      <ul class="socials-list">
+        <!-- <li class="social-item"><a href="#">Insta</a></li> -->
+        <li class="social-item"><a href="https://www.linkedin.com/in/emma-heckman-7107b21b7/">LinkedIn</a></li>
+        <li class="social-item"><a href="https://www.behance.net/emmaheckman">Behance</a></li>
+      </ul>
     </li>
-</ul>
+    <!-- <li class="footer-item-4">
+      <p class="copyright">Copyright © 2023 Emma Heckman. All Rights Reserved.
+      </p>
+    </li> -->
+  </ul>
+
+  <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
+
+  <script type="text/javascript">
+    myID = document.getElementById("myID");
+
+    var myScrollFunc = function () {
+      var y = window.scrollY;
+      if (y >= 800) {
+        myID.className = "bottomMenu show"
+      } else {
+        myID.className = "bottomMenu hide"
+      }
+    };
+
+    window.addEventListener("scroll", myScrollFunc);
+  </script>
 
 
 
