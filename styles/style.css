@@ -128,7 +128,7 @@ svg {
 */
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--overlay-color);
@@ -305,6 +305,7 @@ p {
   display: flex;
   flex-direction: column;
   flex: 1;
+ 
   align-items: center;
   justify-content: center;
   padding: 2rem 4rem;
@@ -856,7 +857,7 @@ a.sub-navigation-link:hover {
 
 
   h1 {
-    font-size: 4.275rem;
+    font-size: 3rem;
   }
 
   h2 {
@@ -872,7 +873,7 @@ a.sub-navigation-link:hover {
   }
 
   .hero {
-    min-height: 70vh;
+    min-height: 50vh;
   }
 
   .hero-headline-wrapper {
