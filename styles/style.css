@@ -881,7 +881,7 @@ a.sub-navigation-link:hover {
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
     grid-gap: 1.5rem;
   }
 
@@ -1030,11 +1030,11 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1200px) {
   body {
-    /* background: hotpink; */
+    background: hotpink;
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   }
 
 
@@ -1044,13 +1044,12 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1400px) {
   body {
-    /* background: blueviolet; */
+    background: blueviolet;
 
   }
 
-
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
   }
 
 
