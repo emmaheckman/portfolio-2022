@@ -163,10 +163,12 @@ h3 {
 h4 {
   color: var(--overlay-color);
   font-family: var(--subheading-typeface);
+  line-height: 1.3;
 }
 
 h5 {
-  color: var(--overlay-color)
+  color: var(--overlay-color);
+  font-family: var(--subheading-typeface);
 }
 
 h6{
@@ -465,6 +467,13 @@ p {
   grid-row: 4 / 5;
 }
 
+.capilano-u{
+  margin-bottom: 2rem; 
+  
+}
+
+
+
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -525,6 +534,7 @@ p {
 .footer-item-3, 
 .footer-item-4 {
   padding: 1rem;
+  padding: 2rem;
 }
 
 .footer-intro-list,
@@ -687,7 +697,8 @@ p {
 
 .holding-page-copyright {
   font-size: .8rem;
-  color: #EAD268;
+  margin-top: 10rem;
+  color: var(--hover-color)
 }
 
 
@@ -887,7 +898,7 @@ a.sub-navigation-link:hover {
 
   .about-page {
 
-    margin: 2rem;
+    /* margin: 2rem; */
   }
 
 
@@ -902,8 +913,9 @@ a.sub-navigation-link:hover {
   } */
 
   .about {
+    margin: 3rem;
     padding-top: 3rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .global-footer {
@@ -1030,7 +1042,7 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1200px) {
   body {
-    background: hotpink;
+    /* background: hotpink; */
   }
 
   .grid {
@@ -1044,7 +1056,7 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1400px) {
   body {
-    background: blueviolet;
+    /* background: blueviolet; */
 
   }
 
