@@ -10,7 +10,10 @@ Add the Google Fonts you want, remove the ones you don't.
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Syne&display=swap');
+
+
 
 
 
@@ -68,8 +71,8 @@ html {
 :root {
   --primary-text-color: #222;
   --accent-color: rgb(227, 215, 215);
-  --overlay-color: #152D97;
-  --hyperlink-color: #152D97;
+  --overlay-color: #111115;
+  --hyperlink-color: #222;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
   --body-typeface: 'Montserrat', sans-serif;
@@ -91,7 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0;
+  margin: 2rem;
 }
 
 main {
@@ -107,8 +110,10 @@ main {
 img,
 svg {
   max-width: 100%;
+  /* margin: 1rem; */
   height: auto;
   vertical-align: top;
+  border-radius: 20px;
   /* Removes the gap/space in inline elements for text descenders. */
   object-fit: contain;
   /* This is optional. Also try cover or leave out entirely. */
@@ -162,7 +167,9 @@ h3 {
 
 h4 {
   color: var(--overlay-color);
-  font-family: var(--subheading-typeface);
+  font-weight: 500;
+  font-family: 'karla', sans-serif;
+  /* font-family: var(--subheading-typeface); */
   line-height: 1.3;
 }
 
@@ -278,10 +285,13 @@ p {
 */
 
 .hero {
-  min-height: 50vh;
+  
+  min-height: 20vh;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
-
+  
+ 
 }
 
 .branding-navigation {
@@ -294,6 +304,7 @@ p {
 
 .logo {
   width: 3rem;
+
 }
 
 .hero-header {
@@ -301,17 +312,25 @@ p {
   position: sticky;
   top: 0px;
   z-index: 1;
+  
 }
 
 .hero-headline-wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
+  align-items: left;
+  padding: 1rem;
+  text-align: left;
+  margin: 1rem;
+  border-bottom: 1px solid black;
+
  
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 4rem;
-  text-align: center;
+  /* border-bottom: 1px solid black; */
+  
+ 
+ 
+  
 }
 
 .hero-icon {
@@ -605,6 +624,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 1rem;
 }
 
 .project-text {
@@ -614,13 +634,31 @@ p {
 }
 
 
+#CategoryButton{
+  display: block;
+  width: 50%;
+  max-width: 100px;
+  max-height: 40px;
+
+  outline-style:solid black;
+  /* background-color: #4e7ac6; */
+  border-radius: 25px;
+  padding: 14px 28px;
+  font-family: 'karla' serif;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
 
 /* Main Project Image Area */
 
 .project-details {
   width: 100%;
   background: #F8F6F2;
-  padding: 1rem;
+
 }
 
 
@@ -884,11 +922,11 @@ a.sub-navigation-link:hover {
   }
 
   .hero {
-    min-height: 50vh;
+    min-height: 20vh;
   }
 
   .hero-headline-wrapper {
-    padding: 4rem 8rem;
+    padding: 1rem;
   }
 
   .grid {
