@@ -195,8 +195,9 @@ a:visited {
   color: var(--hyperlink-color);
 }
 
-a:hover {
+a:hover, a.active-page  {
   color: var(--hover-color);
+  text-decoration: underline;
 }
 
 a:focus {
@@ -288,7 +289,7 @@ p {
 }
 
 body {
-  font-family: "karla", sans serif;
+  font-family: "karla", sans-serif;
   font-size: 1rem;
   padding: 1rem;
   font-weight: 300;
@@ -296,6 +297,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
+
+.branding {width: 4rem;}
 
 .branding-navigation {
   display: flex;
@@ -369,7 +373,7 @@ html {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: left;
+  align-items: flex-start;
   padding: 1rem;
   text-align: left;
   margin: 1rem;
@@ -566,7 +570,7 @@ html {
 }
 body {
   
-  font-family: "karla", sans serif;
+  font-family: "karla", sans-serif;
   font-size: 1rem;
   padding: 0.75rem;
   font-weight: 400;
@@ -592,7 +596,7 @@ body {
 }
 
 .footer-navigation {
-  border-top: 1 pixel solid black;
+  border-top: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -601,7 +605,7 @@ body {
 
 .botnav .icon {
   display: none;
-  border-top: 1 pixel solid black;
+  border-top: 1px solid black;
 }
 
 
@@ -741,19 +745,16 @@ body {
 
 #CategoryButton {
   display: block;
-  width: 50%;
-  max-width: 100px;
-  max-height: 40px;
-
-  outline-style: solid black;
+  border: 2px solid black;
   /* background-color: #4e7ac6; */
   border-radius: 25px;
-  padding: 14px 28px;
-  font-family: 'karla'serif;
+  padding: .6rem 1.2rem;
+  font-family: 'karla', serif;
   font-size: 16px;
-  cursor: pointer;
   text-align: center;
   margin-bottom: 2rem;
+  width: 8rem;
+  color: black;
 
 }
 
