@@ -195,7 +195,8 @@ a:visited {
   color: var(--hyperlink-color);
 }
 
-a:hover, a.active-page  {
+a:hover,
+a.active-page {
   color: var(--hover-color);
   text-decoration: underline;
 }
@@ -299,7 +300,9 @@ body {
 }
 
 
-.branding {width: 4rem;}
+.branding {
+  width: 4rem;
+}
 
 .branding-navigation {
   display: flex;
@@ -340,6 +343,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  margin: 1rem;
 }
 
 .main-navigation {
@@ -563,13 +567,15 @@ html {
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
 body {
-  
+
   font-family: "karla", sans-serif;
   font-size: 1rem;
   padding: 0.75rem;
@@ -578,6 +584,7 @@ body {
   flex-direction: column;
   min-height: 50vh;
 }
+
 .wrapper {
   flex: 1;
   display: flex;
@@ -596,7 +603,7 @@ body {
 }
 
 .footer-navigation {
-  border-top: 1px solid black;
+  /* border-top: 1px solid black; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -675,7 +682,7 @@ body {
 
 .footer-logo {
   width: 20%;
-} */ 
+} */
 
 
 /* Project Page 
@@ -897,14 +904,15 @@ body {
     display: block;
   }
 
-.footer-navigation{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 44%;
+  .footer-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 44%;
 
-  
-}
+
+  }
+
   .main-navigation {
     display: flex;
     flex-direction: row;
@@ -975,7 +983,11 @@ body {
     grid-gap: 1.5rem;
   }
 
+.portfolio-full-page{
 
+ padding-bottom: 1rem;
+
+}
 
 
   /* Grayscale filter with full-colour on hover and tap
@@ -991,7 +1003,7 @@ body {
   .about {
     margin: 3rem;
     padding-top: 3rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .global-footer {
