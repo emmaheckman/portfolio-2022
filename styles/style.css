@@ -31,12 +31,13 @@ Imported stylesheets. Remove the ones you do not want to use.
 
 
 @import url('scroll-to-top.css');
+
 /*
 
 X-Small devices (portrait phones, less than 576px) 
 /* No media query for `xs` since this is the default in Bootstrap  */
 
-███ ███ ██████ ██████ ██ ██ ███████ ███████ ██ ██████ ███████ ████████ ████ ████ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ████ ██ ██ ██ ██████ ██ ██ █████ █████ ██ ██████ ███████ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██████ ██████ ██ ███████ ███████ ██ ██ ██ ██ ███████ ██
+/* ███ ███ ██████ ██████ ██ ██ ███████ ███████ ██ ██████ ███████ ████████ ████ ████ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ████ ██ ██ ██ ██████ ██ ██ █████ █████ ██ ██████ ███████ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██████ ██████ ██ ███████ ███████ ██ ██ ██ ██ ███████ ██  */
 /* Add Border Box and Smooth Scroll */
 
 html {
@@ -154,7 +155,7 @@ h2 {
 
 h3 {
   font-size: 1.325rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   line-height: 1.3;
 }
 
@@ -267,6 +268,15 @@ p {
   margin-bottom: 1rem
 }
 
+ul {
+
+  padding-top: 10px;
+  line-height: 1.3;
+}
+
+li{
+  line-height: 1.3;
+}
 
 
 /* Hero 
@@ -301,7 +311,7 @@ body {
 
 
 .branding {
-  width: 4rem;
+  width: 6rem;
 }
 
 .branding-navigation {
@@ -515,40 +525,31 @@ html {
                                            
 */
 
-.about {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  background: #F8F6F2;
-  padding: 1rem;
-  flex: 1;
+
+
+
+ .about-me-paragraph{
+   grid-column: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.about-item-1 {
-  grid-column: 2 / 1;
-  grid-row: 2 /1;
+.about-me-photo{
+  grid-column: 2;
+padding-bottom: 20px;
+max-width: 100%;
+
 }
 
-.about-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
+.street-credit {
 
-.about-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-.about-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
+  grid-column: 1;
 }
 
 .capilano-u {
   margin-bottom: 2rem;
 
 }
-
 
 
 /* Global Footer
@@ -618,71 +619,6 @@ body {
 
 
 
-/* .bottomMenu {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-
-
-.global-footer {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  background: var(--alt-background-color)
-}
-
-.footer-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  background: var(--floral-white);
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-}
-
-.footer-item-2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  border-top: 1px solid var(--accent-color);
-}
-
-.footer-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  border-top: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
-
-}
-
-.footer-item-4 {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  border-top: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
-  /* background: var(--accent-color); */
-
-
-
-/* .footer-item-1,
-.footer-item-2,
-.footer-item-3,
-.footer-item-4 {
-  padding: 1rem;
-  padding: 2rem;
-}
-
-.footer-intro-list,
-.footer-navigation-list,
-.socials-list {}
-
-.footer-intro-item {
-  margin-bottom: 1rem;
-}
-
-.footer-logo {
-  width: 20%;
-} */
 
 
 /* Project Page 
@@ -922,6 +858,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
   .topnav.responsive {
     position: relative;
     background: red;
@@ -943,7 +880,37 @@ body {
 
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+   .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    background: #F8F6F2;
+    padding: 1rem;
+    flex: 1;
+  } 
+  
+   .about-me-paragraph{
+     grid-column: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .about-me-photo{
+    grid-column: 2;
+  padding-bottom: 20px;
+  max-width: 100%;
+  
+  }
+  
+  .street-credit {
+  
+    grid-column: 1;
+  }
+
+
+}
 
 /* Large devices (desktops, 992px and up) */
 
@@ -1000,11 +967,11 @@ body {
     filter: grayscale(0);
   } */
 
-  .about {
+   .about {
     margin: 3rem;
     padding-top: 3rem;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 
   .global-footer {
     grid-template-columns: 1fr 1fr 1fr;
@@ -1012,64 +979,7 @@ body {
     grid-gap: 0;
   }
 
-  .about-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  /* .footer-item-1,
-  .footer-item-2,
-  .footer-item-3,
-  .footer-item-4 {
-    padding: 3.275rem;
-    line-height: 1.4;
-  }
-
-  .footer-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-
-  }
-
-  .footer-item-2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-
-  }
-
-  .footer-item-3 {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-
-  }
-
-  .footer-item-4 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-
-  }
-
-  .footer-intro-list,
-  .footer-navigation-list,
-  .socials-list {} */
-
-  .about-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .about-item-3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
-  .about-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
-  }
-
+ 
   .copyright {
     font-size: .9rem;
     text-align: left;
