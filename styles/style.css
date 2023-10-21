@@ -10,12 +10,7 @@ Add the Google Fonts you want, remove the ones you don't.
 
 */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Syne&display=swap');
-
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Syne&display=swap");
 
 /*
 
@@ -29,8 +24,7 @@ Imported stylesheets. Remove the ones you do not want to use.
 
 */
 
-
-@import url('scroll-to-top.css');
+@import url("scroll-to-top.css");
 
 /*
 
@@ -69,17 +63,15 @@ html {
   --hyperlink-color: #222;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
-  --body-typeface: 'Montserrat', sans-serif;
-  --heading-typeface: 'Karla', sans-serif;
-  --subheading-typeface: 'Montserrat', sans-serif;
-  --project-title-typeface: 'Eczar', serif;
+  --body-typeface: "Montserrat", sans-serif;
+  --heading-typeface: "Karla", sans-serif;
+  --subheading-typeface: "Montserrat", sans-serif;
+  --project-title-typeface: "Eczar", serif;
   --heart-color: darkred;
   --background-color: rgba(248, 246, 242, 0.975);
   /* --alt-background-color: black; */
   --text-selection-background-color: #555;
 }
-
-
 
 body {
   font-family: var(--body-typeface);
@@ -88,12 +80,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 2rem;
-}
-
-main {
-  margin: 1rem;
-
 }
 
 ::selection {
@@ -111,10 +97,7 @@ svg {
   /* Removes the gap/space in inline elements for text descenders. */
   object-fit: contain;
   /* This is optional. Also try cover or leave out entirely. */
-
 }
-
-
 
 /* Global & Mobile Typography 
 
@@ -139,7 +122,6 @@ h1 {
   margin-bottom: 1rem;
   color: var(--overlay-color);
   /* border-bottom: 1px solid var(--accent-color); */
-
 }
 
 .overlay-title {
@@ -162,7 +144,7 @@ h3 {
 h4 {
   color: var(--overlay-color);
   font-weight: 500;
-  font-family: 'karla', sans-serif;
+  font-family: "karla", sans-serif;
   /* font-family: var(--subheading-typeface); */
   line-height: 1.3;
 }
@@ -173,12 +155,10 @@ h5 {
 }
 
 h6 {
-  font-size: .75rem;
-
+  font-size: 0.75rem;
 }
 
 p {
-
   font-family: var(--body-typeface);
   font-size: 1rem;
   line-height: 1.3;
@@ -190,6 +170,7 @@ p {
 a:link {
   color: var(--hyperlink-color);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 a:visited {
@@ -199,7 +180,7 @@ a:visited {
 a:hover,
 a.active-page {
   color: var(--hover-color);
-  text-decoration: underline;
+  border-bottom: 2px solid var(--hover-color);
 }
 
 a:focus {
@@ -247,10 +228,8 @@ p {
 }
 
 .fineprint {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
-
-
 
 .award-item {
   line-height: 1.3;
@@ -265,19 +244,17 @@ p {
   font-size: 1rem;
   color: black;
   line-height: 1.3;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
 
 ul {
-
   padding-top: 10px;
   line-height: 1.3;
 }
 
-li{
+li {
   line-height: 1.3;
 }
-
 
 /* Hero 
 
@@ -290,13 +267,10 @@ li{
 */
 
 .hero {
-
   min-height: 20vh;
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
-
-
 }
 
 body {
@@ -308,7 +282,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
 
 .branding {
   width: 6rem;
@@ -324,7 +297,6 @@ body {
 
 .logo {
   width: 3rem;
-
 }
 
 /* TOP NAV HEADER */
@@ -353,25 +325,20 @@ html {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  margin: 1rem;
 }
 
 .main-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 15%;
-
+  width: 25%;
+  align-items: center;
+  background-color: skyblue;
 }
 
 .topnav .icon {
   display: none;
 }
-
-
-
-
-
 
 /* .hero-header {
   background: var(--background-color);
@@ -392,13 +359,6 @@ html {
   text-align: left;
   margin: 1rem;
   /* border-bottom: 1px solid black; */
-
-
-
-
-
-
-
 }
 
 .hero-icon {
@@ -429,7 +389,6 @@ html {
   flex-direction: column;
 }
 
-
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -444,10 +403,14 @@ html {
   flex: 1;
 }
 
+.work-page {
+  width: 100%;
+}
+
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: .35rem
+  padding: 0.35rem;
 }
 
 /* Defining the work page grid */
@@ -455,9 +418,8 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2.25rem;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 3px; */
-
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3px;
 
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
@@ -465,7 +427,7 @@ html {
 .work-page-grid-item {
   width: 100%;
   height: auto;
-  position: relative;
+  /* position: relative; */
 
   /* border-bottom: 1px solid black; */
   /* Required to contain overlay size */
@@ -487,17 +449,16 @@ html {
   align-items: center;
   flex-direction: column;
   padding: 1em;
-  background-color: #F8F6F2;
-  transition: opacity .3s, visibility .3s;
+  background-color: #f8f6f2;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .work-page-grid-item:hover .overlay {
   visibility: visible;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .project-title-bottom {
-
   display: flex;
   justify-content: space-between;
   /* padding-bottom: 1.75rem; */
@@ -512,9 +473,6 @@ html {
   filter: opacity(.4);
 } */
 
-
-
-
 /* 
 
  █████  ██████   ██████  ██    ██ ████████ 
@@ -525,32 +483,25 @@ html {
                                            
 */
 
-
-
-
- .about-me-paragraph{
-   grid-column: 1;
+.about-me-paragraph {
+  grid-column: 1;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.about-me-photo{
+.about-me-photo {
   grid-column: 2;
-padding-bottom: 20px;
-max-width: 100%;
-
+  padding-bottom: 20px;
+  max-width: 100%;
 }
 
 .street-credit {
-
   grid-column: 1;
 }
 
 .capilano-u {
   margin-bottom: 2rem;
-
 }
-
 
 /* Global Footer
 
@@ -561,8 +512,6 @@ max-width: 100%;
 ██       ██████   ██████     ██    ███████ ██   ██ 
                                                    
 */
-
-
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -576,7 +525,6 @@ html {
 }
 
 body {
-
   font-family: "karla", sans-serif;
   font-size: 1rem;
   padding: 0.75rem;
@@ -616,11 +564,6 @@ body {
   border-top: 1px solid black;
 }
 
-
-
-
-
-
 /* Project Page 
 
 ██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ 
@@ -635,22 +578,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #F8F6F2;
+  background: #f8f6f2;
 }
 
 /* Sidebar */
 .project-aside {
   width: 100%;
   color: white;
-  background: #F8F6F2;
+  background: #f8f6f2;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-
 }
 
 .project-navigation {
-
   display: flex;
   flex-direction: row;
   flex: 1;
@@ -685,34 +626,26 @@ body {
   padding: 3rem;
 }
 
-
 #CategoryButton {
   display: block;
   border: 2px solid black;
   /* background-color: #4e7ac6; */
   border-radius: 25px;
-  padding: .6rem 1.2rem;
-  font-family: 'karla', serif;
+  padding: 0.6rem 1.2rem;
+  font-family: "karla", serif;
   font-size: 16px;
   text-align: center;
   margin-bottom: 2rem;
   width: 8rem;
   color: black;
-
 }
-
 
 /* Main Project Image Area */
 
 .project-details {
   width: 100%;
-  background: #F8F6F2;
-
+  background: #f8f6f2;
 }
-
-
-
-
 
 /* 
 
@@ -724,11 +657,8 @@ body {
                                                        
 */
 
-
-
 .contact-form {
-
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 
   margin: auto;
@@ -736,34 +666,30 @@ body {
 }
 
 #email {
-
   width: 300px;
   height: 30px;
   border-radius: 10px;
-  background-color: #F8F6F2;
-  border: 1px solid #152D97;
+  background-color: #f8f6f2;
+  border: 1px solid #152d97;
 }
 
 #submit {
-
   height: 30px;
-  font-family: 'Montserrat', sans-serif;
-  border: 1px solid #152D97;
-  color: #152D97;
-  background-color: #F8F6F2;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #152d97;
+  color: #152d97;
+  background-color: #f8f6f2;
   border-radius: 15px;
 }
-
 
 .holding-page-wrapper {
   display: grid;
   place-items: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #F8F6F2;
+  background-color: #f8f6f2;
   /* https://grainy-gradients.vercel.app/ */
 }
-
 
 .holding-page-inner-container {
   display: grid;
@@ -779,16 +705,14 @@ body {
 
 .holding-page-title {
   font-size: 3rem;
-  color: #152D97;
+  color: #152d97;
 }
 
 .holding-page-copyright {
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin-top: 10rem;
-  color: var(--hover-color)
+  color: var(--hover-color);
 }
-
-
 
 /*
 ███████ ██████  ██████   ██████  ██████  
@@ -798,14 +722,13 @@ body {
 ███████ ██   ██ ██   ██  ██████  ██   ██ 
 */
 
-
-
 .error-page {
   display: grid;
   place-items: center;
 }
 
-.error-page-wrapper {}
+.error-page-wrapper {
+}
 
 .error-page-inner-container {
   text-align: center;
@@ -814,9 +737,6 @@ body {
 .error-page-title {
   color: var(--accent-color);
 }
-
-
-
 
 /*
 
@@ -828,99 +748,50 @@ body {
 
 */
 
-
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-
-  .footer-navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 44%;
-
-
-  }
-
-  .main-navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 44%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-
-  .topnav.responsive {
-    position: relative;
-    background: red;
-  }
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+  body {
+    background: gold;
+  }
 
-   .about {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 1.5rem;
+  }
+
+  .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
-    background: #F8F6F2;
+    background: #f8f6f2;
     padding: 1rem;
     flex: 1;
-  } 
-  
-   .about-me-paragraph{
-     grid-column: 1;
+  }
+
+  .about-me-paragraph {
+    grid-column: 1;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
-  .about-me-photo{
+
+  .about-me-photo {
     grid-column: 2;
-  padding-bottom: 20px;
-  max-width: 100%;
-  
+    padding-bottom: 20px;
+    max-width: 100%;
   }
-  
+
   .street-credit {
-  
     grid-column: 1;
   }
-
-
 }
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-
   body {
-    /* background: forestgreen; */
+    background: lightcoral;
   }
-
-
   h1 {
     font-size: 3rem;
   }
@@ -946,16 +817,13 @@ body {
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(00px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1.5rem;
   }
 
-.portfolio-full-page{
-
- padding-bottom: 1rem;
-
-}
-
+  .portfolio-full-page {
+    padding-bottom: 1rem;
+  }
 
   /* Grayscale filter with full-colour on hover and tap
   .work-page-grid-item a img {
@@ -967,21 +835,19 @@ body {
     filter: grayscale(0);
   } */
 
-   .about {
+  .about {
     margin: 3rem;
     padding-top: 3rem;
     grid-template-columns: 1fr 1fr;
-  } */
-
-  .global-footer {
+  }
+  */ .global-footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr;
     grid-gap: 0;
   }
 
- 
   .copyright {
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-align: left;
   }
 
@@ -994,7 +860,6 @@ body {
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
     flex-direction: row;
-
   }
 
   /* Sidebar on Large Devices */
@@ -1027,41 +892,31 @@ body {
 
   .arrow {
     padding-right: 1rem;
-
   }
-
-
 }
 
-
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
-
 
 /* X-Large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
   body {
-    /* background: hotpink; */
+    background: hotpink;
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
-
-
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {
   body {
-    /* background: blueviolet; */
-
+    background: blueviolet;
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   }
-
-
 }
