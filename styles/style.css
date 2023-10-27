@@ -276,7 +276,7 @@ body {
 }
 
 .branding {
-  width: 6rem;
+  width: 4rem;
 }
 
 .branding-navigation {
@@ -292,6 +292,8 @@ body {
 }
 
 /* TOP NAV HEADER */
+
+
 
 html {
   box-sizing: border-box;
@@ -320,6 +322,7 @@ html {
 }  */
 
 .main-navigation {
+  margin: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -342,6 +345,21 @@ html {
 
 /* END OF TOP NAV HEADER */
 
+
+
+/* FOOTER */
+
+.back-to-top{
+  width: 6rem;
+}
+
+.footer-navigation{
+
+  width: 30%;
+}
+
+
+/* END FOOTER */
 .hero-headline-wrapper {
   display: flex;
   flex-direction: column;
@@ -391,13 +409,20 @@ html {
 
 */
 
+
+
+
 .work-wrapper {
+  margin: 2rem;
   flex: 1;
+  gap: 10%;
+  
  
 }
 
 .work-page {
-  width: 100%;
+margin: 0;
+  /* width: 100%; */
 }
 
 /* Padding around work grid and project page */
@@ -472,8 +497,13 @@ ABOUT SECTION
 
 .about-me-paragraph {
   grid-column: 1;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   padding-bottom: 10px;
+}
+
+.life-highlights{
+
+  padding: 20px 0px 20px 0px;  
 }
 
 .about-me-photo {
@@ -484,6 +514,7 @@ ABOUT SECTION
 
 .street-credit {
   grid-column: 1;
+  padding-top: 10px;
 }
 
 .capilano-u {
@@ -501,7 +532,7 @@ text-align: left;
 }
 
 .menu-social a .fab {
-  font-size: 1.25rem;
+ font-size: 1.25rem; 
 }
 
 .visually-hidden{
@@ -594,6 +625,16 @@ body {
 ██      ██   ██  ██████   █████  ███████  ██████    ██        ██      ██   ██  ██████  ███████ 
                                                                                                
 */
+
+.project-1{
+
+  margin: 0;
+}
+
+.milk-project{
+
+  margin: 1rem;
+}
 
 .project-wrapper {
   display: flex;
