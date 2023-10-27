@@ -67,6 +67,11 @@ body {
   min-height: 100vh;
 }
 
+main{
+
+  margin: 2rem;
+}
+
 ::selection {
   background: var(--accent-color);
 }
@@ -307,12 +312,12 @@ html {
   text-align: center;
 }
 
-.header {
+ /* .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-}
+}  */
 
 .main-navigation {
   display: flex;
@@ -388,6 +393,7 @@ html {
 
 .work-wrapper {
   flex: 1;
+ 
 }
 
 .work-page {
