@@ -49,7 +49,7 @@ VARIABLES
   --subheading-typeface: "Montserrat", sans-serif;
   --project-title-typeface: "Eczar", serif;
   --heart-color: darkred;
-  --background-color:#f5f6f0;
+  --background-color: #f5f6f0;
   /* --alt-background-color: black; */
   --text-selection-background-color: #555;
 }
@@ -57,19 +57,17 @@ VARIABLES
 /* END VARIABLES */
 
 body {
-  margin: 0;
-  position: relative;
   font-family: var(--body-typeface);
   color: var(--primary-text-color);
   background: var(--background-color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-weight: 300;
 }
-
-main{
-
-  margin: 2rem;
+.page-wrapper {
+  padding: 1rem;
+  background: lightsalmon;
 }
 
 ::selection {
@@ -237,17 +235,15 @@ p {
   margin-bottom: 1rem;
 }
 
-ul {
-  padding-top: 10px;
-  line-height: 1.3;
-}
-
 li {
   line-height: 1.3;
   font-family: var(--subheading-typeface);
   font-weight: 300;
 }
 
+.about-page-list-item {
+  margin-bottom: 0.5rem;
+}
 /* Hero 
 
 ██   ██ ███████ ██████   ██████  
@@ -263,16 +259,6 @@ li {
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
-}
-
-body {
-  font-family: "karla", sans-serif;
-  font-size: 1rem;
-  padding: 1rem;
-  font-weight: 300;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 .branding {
@@ -293,8 +279,6 @@ body {
 
 /* TOP NAV HEADER */
 
-
-
 html {
   box-sizing: border-box;
 }
@@ -314,7 +298,7 @@ html {
   text-align: center;
 }
 
- /* .header {
+/* .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -326,9 +310,8 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 25%;
+  width: 30%;
   align-items: center;
-  /* background-color: skyblue; */
 }
 
 .topnav .icon {
@@ -345,19 +328,19 @@ html {
 
 /* END OF TOP NAV HEADER */
 
-
-
 /* FOOTER */
 
-.back-to-top{
+.footer-navigation,
+.back-to-top {
+  margin: 0;
+}
+.back-to-top {
   width: 6rem;
 }
 
-.footer-navigation{
-
+.footer-navigation {
   width: 30%;
 }
-
 
 /* END FOOTER */
 .hero-headline-wrapper {
@@ -409,19 +392,14 @@ html {
 
 */
 
-
-
-
 .work-wrapper {
   margin: 2rem;
   flex: 1;
   gap: 10%;
-  
- 
 }
 
 .work-page {
-margin: 0;
+  margin: 0;
   /* width: 100%; */
 }
 
@@ -437,7 +415,7 @@ margin: 0;
   grid-template-columns: 1fr;
   grid-gap: 2.25rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 3px;
+  grid-gap: 1.5rem;
 
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
@@ -445,10 +423,6 @@ margin: 0;
 .work-page-grid-item {
   width: 100%;
   height: auto;
-  /* position: relative; */
-
-  /* border-bottom: 1px solid black; */
-  /* Required to contain overlay size */
 }
 
 /* Overlay */
@@ -499,35 +473,18 @@ ABOUT SECTION
   padding-bottom: none;
 }
 
-
 .about-me-paragraph {
   grid-column: 1;
   /* padding-top: 10px; */
   padding-bottom: 10px;
 }
 
-.education {
-  grid-column: 1;
-}
-
-.work-experience {
-  grid-column: 1;
-}
-
-
 .awards {
   grid-column: 2;
   grid-row: 4;
 }
-.life-highlights{
-
-  padding: 20px 0px 20px 0px;  
-}
-
-.about-me-photo {
-  grid-column: 2;
-  padding-bottom: 20px;
-  max-width: 100%;
+.life-highlights {
+  padding: 20px 0px 20px 0px;
 }
 
 /* .street-credit {
@@ -542,27 +499,23 @@ ABOUT SECTION
 /* SOCIAL MEDIA ICONS */
 
 .menu-social-search a {
-color: black;
-font-size: 2rem;
-margin: auto;
-text-align: left;
-
+  color: black;
+  font-size: 2rem;
+  margin: auto;
+  text-align: left;
 }
 
 .menu-social a .fab {
- font-size: 1.25rem; 
+  font-size: 1.25rem;
 }
 
-.visually-hidden{
+.visually-hidden {
   height: 1px;
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
   width: 1px;
-
 }
-
-
 
 .menu-social-search li {
   display: inline;
@@ -570,7 +523,6 @@ text-align: left;
 }
 
 /* END SOCIAL MEDIA ICONS */
-
 
 /* Global Footer
 
@@ -593,16 +545,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  font-family: "karla", sans-serif;
-  font-size: 1rem;
-  padding: 0.75rem;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  min-height: 50vh;
-}
-
 .wrapper {
   flex: 1;
   display: flex;
@@ -622,12 +564,10 @@ body {
 }
 
 .footer-navigation {
-  /* border-top: 1px solid black; */
-  margin: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 18%;
+  width: 30%;
 }
 
 .botnav .icon {
@@ -645,13 +585,11 @@ body {
                                                                                                
 */
 
-.project-1{
-
+.project-1 {
   margin: 0;
 }
 
-.milk-project{
-
+.milk-project {
   margin: 1rem;
 }
 
@@ -832,12 +770,9 @@ body {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-  body {
-    position: relative;
-    /* background: gold; */
-    /* margin: 16px; */
+  .page-wrapper {
+    padding: 3rem;
   }
-
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 1.5rem;
@@ -846,39 +781,38 @@ body {
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
     background: #f8f6f2;
     padding: 1rem;
-    flex: 1;
+  }
+  .footer-navigation,
+  .back-to-top {
+    margin: 2rem;
+  }
+  .about-inner-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-right: 4rem;
   }
 
-  .about-me-paragraph {
-    grid-column: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    max-width: 600px;
+  .about-me-bio {
+    font-size: 1.375rem;
+    margin-bottom: 1rem;
   }
-
+  .about-me-photo-wrapper {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
   .about-me-photo {
-    grid-row: 2;
-    padding-bottom: 20px;
-    max-width: 80%;
+    margin-bottom: 2rem;
   }
 
-  .life-highlights{
-    grid-column: 1;
-  
-  }
-
-  .about {
+  .life-highlights {
     grid-column: 1;
   }
 
-.awards {
-  grid-column: 2;
-}
-
-
+  .awards {
+    grid-column: 2;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -931,11 +865,10 @@ body {
   } */
 
   .about {
-    margin: 3rem;
     padding-top: 3rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
   }
-  
+
   .global-footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr;
@@ -993,8 +926,6 @@ body {
 
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
 
-
-
 /* X-Large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
@@ -1006,8 +937,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
-
-
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
