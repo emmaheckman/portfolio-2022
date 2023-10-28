@@ -1,5 +1,5 @@
 /* 
- FONTS
+ FONTS 
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Syne&display=swap");
@@ -495,12 +495,30 @@ margin: 0;
 ABOUT SECTION
 */
 
+.street-credit-titles {
+  padding-bottom: none;
+}
+
+
 .about-me-paragraph {
   grid-column: 1;
   /* padding-top: 10px; */
   padding-bottom: 10px;
 }
 
+.education {
+  grid-column: 1;
+}
+
+.work-experience {
+  grid-column: 1;
+}
+
+
+.awards {
+  grid-column: 2;
+  grid-row: 4;
+}
 .life-highlights{
 
   padding: 20px 0px 20px 0px;  
@@ -512,10 +530,10 @@ ABOUT SECTION
   max-width: 100%;
 }
 
-.street-credit {
+/* .street-credit {
   grid-column: 1;
   padding-top: 10px;
-}
+} */
 
 .capilano-u {
   margin-bottom: 2rem;
@@ -605,6 +623,7 @@ body {
 
 .footer-navigation {
   /* border-top: 1px solid black; */
+  margin: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -837,6 +856,7 @@ body {
     grid-column: 1;
     padding-top: 10px;
     padding-bottom: 10px;
+    max-width: 600px;
   }
 
   .about-me-photo {
@@ -850,9 +870,15 @@ body {
   
   }
 
-  .street-credit {
+  .about {
     grid-column: 1;
   }
+
+.awards {
+  grid-column: 2;
+}
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -909,7 +935,8 @@ body {
     padding-top: 3rem;
     grid-template-columns: 1fr 1fr;
   }
-  */ .global-footer {
+  
+  .global-footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr;
     grid-gap: 0;
