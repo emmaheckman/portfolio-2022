@@ -67,7 +67,7 @@ body {
 }
 .page-wrapper {
   padding: 1rem;
-  background: lightsalmon;
+   /* background: lightsalmon;  */
 }
 
 ::selection {
@@ -393,7 +393,7 @@ html {
 */
 
 .work-wrapper {
-  margin: 2rem;
+
   flex: 1;
   gap: 10%;
 }
@@ -584,14 +584,6 @@ html {
 ██      ██   ██  ██████   █████  ███████  ██████    ██        ██      ██   ██  ██████  ███████ 
                                                                                                
 */
-
-.project-1 {
-  margin: 0;
-}
-
-.milk-project {
-  margin: 1rem;
-}
 
 .project-wrapper {
   display: flex;
@@ -833,6 +825,13 @@ html {
     font-size: 1.625rem;
   }
 
+  .main-navigation{
+    width: 20%;
+  }
+  .menu-item {
+    width: 20%;
+  }
+
   .logo {
     width: 5rem;
   }
@@ -935,6 +934,10 @@ html {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+
+  .menu-item {
+    width: 20%;
   }
 }
 
