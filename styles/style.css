@@ -4,6 +4,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Syne&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
 /*
 
 Imported stylesheets. Remove the ones you do not want to use.
@@ -38,16 +40,16 @@ VARIABLES
 */
 
 :root {
-  --primary-text-color: #222;
+  --primary-text-color: #252525;
   --accent-color: rgb(227, 215, 215);
   --overlay-color: #111115;
   --hyperlink-color: #222;
   --hyperlink-alternate-color: orangered;
-  --hover-color: #111;
-  --body-typeface: "Montserrat", sans-serif;
-  --heading-typeface: "Karla", sans-serif;
-  --subheading-typeface: "Montserrat", sans-serif;
-  --project-title-typeface: "Eczar", serif;
+  --hover-color: #252525;
+  --body-typeface: "Manrope", sans-serif;
+  --heading-typeface: "Manrope", sans-serif;
+  --subheading-typeface: "Manrope", sans-serif;
+  --project-title-typeface: "Manrope", serif;
   --heart-color: darkred;
   --background-color: #f5f6f0;
   /* --alt-background-color: black; */
@@ -65,9 +67,10 @@ body {
   min-height: 100vh;
   font-weight: 300;
 }
+
 .page-wrapper {
   padding: 1rem;
-   /* background: lightsalmon;  */
+  /* background: lightsalmon;  */
 }
 
 ::selection {
@@ -168,7 +171,7 @@ a:visited {
 a:hover,
 a.active-page {
   color: var(--hover-color);
-  /* border-bottom: 2px solid var(--hover-color); */
+  border-bottom: 2px solid var(--hover-color);
 }
 
 a:focus {
@@ -244,6 +247,7 @@ li {
 .about-page-list-item {
   margin-bottom: 0.5rem;
 }
+
 /* Hero 
 
 ██   ██ ███████ ██████   ██████  
@@ -334,6 +338,7 @@ html {
 .back-to-top {
   margin: 0;
 }
+
 .back-to-top {
   width: 6rem;
 }
@@ -469,6 +474,11 @@ html {
 ABOUT SECTION
 */
 
+.work-experience {
+  padding: 10px 0px 10px;
+
+}
+
 .street-credit-titles {
   padding-bottom: none;
 }
@@ -482,7 +492,9 @@ ABOUT SECTION
 .awards {
   grid-column: 2;
   grid-row: 4;
+  padding-top: 1rem;
 }
+
 .life-highlights {
   padding: 20px 0px 20px 0px;
 }
@@ -497,6 +509,10 @@ ABOUT SECTION
 }
 
 /* SOCIAL MEDIA ICONS */
+
+.menu-social-search {
+  padding-bottom: 1rem;
+}
 
 .menu-social-search a {
   color: black;
@@ -738,8 +754,7 @@ html {
   place-items: center;
 }
 
-.error-page-wrapper {
-}
+.error-page-wrapper {}
 
 .error-page-inner-container {
   text-align: center;
@@ -765,6 +780,7 @@ html {
   .page-wrapper {
     padding: 3rem;
   }
+
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 1.5rem;
@@ -776,10 +792,12 @@ html {
     background: #f8f6f2;
     padding: 1rem;
   }
+
   .footer-navigation,
   .back-to-top {
     margin: 2rem;
   }
+
   .about-inner-container {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -790,10 +808,12 @@ html {
     font-size: 1.375rem;
     margin-bottom: 1rem;
   }
+
   .about-me-photo-wrapper {
     grid-column: 2/3;
     grid-row: 1/2;
   }
+
   .about-me-photo {
     margin-bottom: 2rem;
   }
@@ -813,6 +833,7 @@ html {
   body {
     /* background: lightcoral; */
   }
+
   h1 {
     font-size: 3rem;
   }
@@ -825,11 +846,14 @@ html {
     font-size: 1.625rem;
   }
 
-  .main-navigation{
+  .main-navigation {
     width: 20%;
   }
+
   .menu-item {
     width: 20%;
+    font-family:Manrope, serif;
+    font-weight: 400;
   }
 
   .logo {
