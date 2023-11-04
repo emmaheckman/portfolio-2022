@@ -4,7 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Syne&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap");
 
 /*
 
@@ -181,6 +181,15 @@ a:focus {
 a:active {
   color: var(--hover-color);
   /* Tap on mobile */
+}
+
+a.branding-link:hover,
+a.branding-link:active,
+a.navigation-arrow:hover,
+a.navigation-arrow:active,
+a.social-link:hover,
+a.social-link:active {
+  border: none;
 }
 
 .navigation-arrow {
@@ -398,7 +407,6 @@ html {
 */
 
 .work-wrapper {
-
   flex: 1;
   gap: 10%;
 }
@@ -428,6 +436,8 @@ html {
 .work-page-grid-item {
   width: 100%;
   height: auto;
+  position: relative;
+  /* Required to contain overlay size */
 }
 
 /* Overlay */
@@ -442,8 +452,8 @@ html {
   opacity: 0;
   transition: 0.75s ease;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   padding: 1em;
   background-color: #f8f6f2;
@@ -452,7 +462,7 @@ html {
 
 .work-page-grid-item:hover .overlay {
   visibility: visible;
-  opacity: 0.8;
+  opacity: 0.875;
 }
 
 .project-title-bottom {
@@ -476,7 +486,6 @@ ABOUT SECTION
 
 .work-experience {
   padding: 10px 0px 10px;
-
 }
 
 .street-credit-titles {
@@ -754,7 +763,8 @@ html {
   place-items: center;
 }
 
-.error-page-wrapper {}
+.error-page-wrapper {
+}
 
 .error-page-inner-container {
   text-align: center;
@@ -852,7 +862,7 @@ html {
 
   .menu-item {
     width: 20%;
-    font-family:Manrope, serif;
+    font-family: Manrope, serif;
     font-weight: 400;
   }
 
