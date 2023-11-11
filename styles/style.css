@@ -626,7 +626,7 @@ html {
 /* Sidebar */
 .project-aside {
   width: 100%;
-  color: white;
+  /* color: white; */
   background: #f8f6f2;
   padding: 1rem;
   display: flex;
