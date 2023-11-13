@@ -199,7 +199,8 @@ a.social-link:active {
 }
 
 .navigation-arrow {
-  color: var(--alt-background-color);
+  /* color: var(--alt-background-color); */
+  color: #555;
 }
 
 .navigation-arrow:link {
@@ -210,7 +211,7 @@ a.social-link:active {
 
 .navigation-arrow:active,
 .navigation-arrow:hover {
-  color: var(--accent-color);
+  color: black;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--accent-color);
 }
