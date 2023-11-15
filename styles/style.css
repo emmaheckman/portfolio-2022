@@ -108,9 +108,9 @@ h1 {
 }
 
 .project-title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: var(--heading-typeface);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: var(--overlay-color);
   /* border-bottom: 1px solid var(--accent-color); */
 }
@@ -662,7 +662,7 @@ html {
 .project-image {
   width: 100%;
   font-size: 12rem;
-  min-height: 50vh;
+  min-height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
