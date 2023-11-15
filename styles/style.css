@@ -181,7 +181,7 @@ a.active-page {
 }
 
 a:focus {
-  outline: 1px solid var(--accent-color);
+  /* outline: 1px solid var(--accent-color); */
 }
 
 a:active {
@@ -199,25 +199,25 @@ a.social-link:active {
 }
 
 .navigation-arrow {
-  /* color: var(--alt-background-color); */
-  color: #555;
+   /* color: var(--alt-background-color);  */
+  /* color: #555; */
 }
 
 .navigation-arrow:link {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #555555;
-  color: transparent;
+ /* -webkit-text-stroke-width: 1px; */
+  /* -webkit-text-stroke-color: var(--alt-background-color);   */
+  /* color: transparent; */
 }
 
 .navigation-arrow:active,
 .navigation-arrow:hover {
-  color: black;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
+   /* color: var(--alt-background-color); 
+  -webkit-text-stroke-width: none;
+  -webkit-text-stroke-color: none;  */
 }
 
 .colored-link {
-  color: var(--hyperlink-alternate-color);
+  /* color: var(--hyperlink-alternate-color); */
 }
 
 .custom-navigation:hover {
@@ -640,6 +640,7 @@ html {
   flex: 1;
   align-items: flex-end;
   justify-content: space-between;
+  
 }
 
 .arrow {
