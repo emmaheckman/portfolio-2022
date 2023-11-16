@@ -247,7 +247,7 @@ p {
 }
 
 .project-description {
-  padding-top: 1rem;
+ padding-top: 0.5rem; 
   font-size: 0.90rem;
   color: black;
   line-height: 1.5;
@@ -645,6 +645,7 @@ html {
   flex: 1;
   align-items: flex-end;
   justify-content: space-between;
+  padding-top: 1rem;
   
 }
 
@@ -694,6 +695,7 @@ html {
 .project-details {
   width: 100%;
   background: #f8f6f2;
+  padding-top: 1rem;
 }
 
 /* 
@@ -818,7 +820,7 @@ html {
 
   .footer-navigation,
   .back-to-top {
-    margin: 2rem;
+    /* margin: 2rem;  */
   }
 
   .about-inner-container {
