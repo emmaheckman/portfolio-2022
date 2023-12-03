@@ -540,6 +540,7 @@ ABOUT SECTION
   font-size: 2rem;
   margin: auto;
   text-align: left;
+  padding-left: 1rem;
 }
 
 .menu-social a .fab {
@@ -905,6 +906,19 @@ html {
   .portfolio-full-page {
     padding-bottom: 1rem;
   }
+
+  .about-me-bio {
+    max-width: 700px;
+  }
+
+  .life-highlights {
+
+    max-width: 600px;
+  
+}
+.education {
+  max-width: 600px;
+}
 
   /* Grayscale filter with full-colour on hover and tap
   .work-page-grid-item a img {
