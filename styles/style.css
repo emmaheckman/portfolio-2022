@@ -361,7 +361,7 @@ html {
 }
 
 .back-to-top {
-  width: 6rem;
+  width: 20rem;
 }
 
 .footer-navigation {
@@ -604,8 +604,8 @@ html {
 .footer-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 30%;
+  justify-content: flex-end;
+  width: 60rem;
 }
 
 .botnav .icon {
