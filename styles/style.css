@@ -516,9 +516,9 @@ ABOUT SECTION
   padding-top: 1rem;
 }
 
-.life-highlights {
+/* .life-highlights {
   padding: 20px 0px 20px 0px;
-}
+} */
 
 /* .street-credit {
   grid-column: 1;
@@ -532,6 +532,7 @@ ABOUT SECTION
 /* SOCIAL MEDIA ICONS */
 
 .menu-social-search {
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -845,7 +846,7 @@ html {
   }
 
   .about-me-photo {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .life-highlights {
