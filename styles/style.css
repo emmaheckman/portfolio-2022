@@ -70,7 +70,7 @@ body {
 
 .page-wrapper {
   padding: 1rem;
-  /* background: lightsalmon;  */
+
 }
 
 ::selection {
@@ -287,8 +287,10 @@ li {
 }
 
 .branding {
-  width: 4rem;
+ width: 35%;
+
 }
+.branding-link {width: 7rem; display: block;}
 
 .branding-navigation {
   display: flex;
@@ -323,19 +325,13 @@ html {
   text-align: center;
 }
 
-/* .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}  */
+
 
 .main-navigation {
-  margin: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 30%;
+  width: 15rem;
   align-items: center;
 }
 
@@ -429,8 +425,7 @@ html {
 }
 
 /* Padding around work grid and project page */
-.portfolio,
-.project-wrapper {
+.portfolio {
   padding: 0.35rem;
 }
 
@@ -541,7 +536,7 @@ ABOUT SECTION
   font-size: 2rem;
   margin: auto;
   text-align: left;
-  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .menu-social a .fab {
@@ -598,8 +593,8 @@ html {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  padding-top: 2rem; 
   padding-bottom: 2rem;
+
 }
 
 .footer-navigation {
@@ -633,12 +628,15 @@ html {
 
 /* Sidebar */
 .project-aside {
-  width: 100%;
-  color: white;
-  background: #f8f6f2;
-  padding: 1rem;
+/*Display stuff*/
   display: flex;
   flex-direction: column;
+/*Box model stuff*/
+  width: 100%;
+  padding: 1rem;
+  background: #f8f6f2;
+/*Typography stuff*/
+  color: white;
 }
 
 .project-navigation {
@@ -664,7 +662,6 @@ html {
 
 .project-image {
   width: 100%;
-  font-size: 12rem;
   min-height: 30vh;
   display: flex;
   align-items: center;
@@ -685,10 +682,10 @@ html {
   border-radius: 25px;
   padding: 0.6rem 1.2rem;
   font-family: "karla", serif;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   margin-bottom: 2rem;
-  width: 8rem;
+  width: 12rem;
   color: black;
 }
 
@@ -697,7 +694,7 @@ html {
 .project-details {
   width: 100%;
   background: #f8f6f2;
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
 /* 
@@ -877,12 +874,8 @@ html {
     font-size: 1.625rem;
   }
 
-  .main-navigation {
-    width: 20%;
-  }
 
   .menu-item {
-    width: 20%;
     font-family: Manrope, serif;
     font-weight: 400;
   }
@@ -933,7 +926,7 @@ html {
 
   .about {
     padding-top: 3rem;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 35fr 65fr;
   }
 
   .global-footer {
@@ -948,8 +941,7 @@ html {
   }
 
   /* Padding around work grid and project page */
-  .portfolio,
-  .project-wrapper {
+  .portfolio {
     padding: 0.5rem;
   }
 
@@ -965,7 +957,7 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 2vh;
-    padding-right: 2rem;
+
   }
 
   /* Main Project Image Area on Large Devices */
@@ -973,9 +965,7 @@ html {
     width: 65%;
   }
 
-  .project-image {
-    min-height: 50vh;
-  }
+
 
   .project-image-container {
     flex-direction: row;
@@ -1004,17 +994,13 @@ html {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 
-  .menu-item {
-    width: 20%;
-  }
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {
-  body {
-    /* background: blueviolet; */
-  }
+
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
