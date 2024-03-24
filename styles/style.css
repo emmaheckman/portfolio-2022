@@ -281,7 +281,7 @@ li {
 */
 
 .hero {
-  min-height: 20vh;
+  /* min-height: 20vh; */
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -887,9 +887,9 @@ html {
     width: 5rem;
   }
 
-  .hero {
-    min-height: 20vh;
-  }
+  /* .hero {
+     min-height: 20vh; 
+  } */
 
   .hero-headline-wrapper {
     padding: 1rem;
