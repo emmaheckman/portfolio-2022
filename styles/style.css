@@ -926,7 +926,7 @@ html {
 
   .about {
     padding-top: 3rem;
-    grid-template-columns: 35fr 65fr;
+    grid-template-columns: 60fr 40fr;
   }
 
   .global-footer {
