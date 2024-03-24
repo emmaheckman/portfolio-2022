@@ -144,6 +144,7 @@ h4 {
   font-family: "karla", sans-serif;
   /* font-family: var(--subheading-typeface); */
   line-height: 1.3;
+  padding-bottom: 0.5rem;
 }
 
 h5 {
@@ -495,9 +496,9 @@ ABOUT SECTION
   padding: 10px 0px 10px;
 }
 
-.street-credit-titles {
+/* .street-credit-titles {
   padding-bottom: none;
-}
+} */
 
 .about-me-paragraph {
   grid-column: 1;
@@ -594,6 +595,7 @@ html {
   justify-content: space-between;
   width: 100%;
   padding-bottom: 2rem;
+  padding-top: 2rem;
 
 }
 
@@ -738,8 +740,9 @@ html {
   width: 100%;
   min-height: 100vh;
   background-color: #f8f6f2;
-  /* https://grainy-gradients.vercel.app/ */
+  
 }
+
 
 .holding-page-inner-container {
   display: grid;
