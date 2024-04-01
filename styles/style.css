@@ -820,7 +820,7 @@ html {
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #f8f6f2;
+    /* background: #f8f6f2; */
     padding: 1rem;
   }
 
@@ -991,11 +991,15 @@ html {
 @media (min-width: 1200px) {
   body {
     /* background: hotpink; */
+    /* height: 5vh; */
+
   }
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
+
+
 
 
 }
