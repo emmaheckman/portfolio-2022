@@ -496,6 +496,11 @@ ABOUT SECTION
   padding: 10px 0px 10px;
 }
 
+.work-experience-date {
+  padding-top: 0.30rem;
+}
+
+
 /* .street-credit-titles {
   padding-bottom: none;
 } */
